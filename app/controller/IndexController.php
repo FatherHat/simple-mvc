@@ -1,0 +1,28 @@
+<?php
+namespace app\Controller;
+
+use core\Controller;
+use VendorTest;
+
+
+class IndexController extends Controller{
+
+    public function index(){
+        echo 'this is index<br>';
+        //测试composer类自动加载
+//        $test = new VendorTest\Test();
+//        $test->index();
+        //调用配置
+        //$data =
+        //调用指定方法，低版本有后门，慎用
+        //$res = call_user_func([$this,'fuckYou'],1,2);
+        
+
+    }
+
+    public function choice()
+    {
+        var_dump("lt was fate's choice");
+    }
+
+}

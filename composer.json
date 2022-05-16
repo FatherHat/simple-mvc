@@ -1,0 +1,17 @@
+{
+    "name": "composer/test",
+    "autoload": {
+        "psr-4": {
+            "VendorTest\\": "vendor/VendorTest"
+        }
+    },
+    "authors": [
+        {
+            "name": "lichong",
+            "email": "892432601@qq.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
