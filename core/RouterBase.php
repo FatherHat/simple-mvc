@@ -44,7 +44,7 @@ class RouterBase{
             exit($controller.'不存在');
         }
         if(!method_exists($controller,$controllerAction)){
-            exit($controllerAction.'不存在');
+            exit($controllerAction.'()不存在');
         }
         //实例化控制器类，如果该类没有实例化，会在入口的注册函数自动加载
         $dispatch = new $controller();
