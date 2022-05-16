@@ -1,8 +1,10 @@
 <?php
 namespace core;
 
-
-
+/**
+ * Class RouterBase
+ * @package core
+ */
 class RouterBase{
 
     public function location(){
