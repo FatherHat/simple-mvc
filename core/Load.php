@@ -43,7 +43,7 @@ class Load{
             "app\\" => "app/",
             "src\\" => "src/",
             "core\\" => "core/",
-            "vendor\\" => "vendor/"
+            //"vendor\\" => "vendor/"
         ];
         $obj = new loadClass();
         foreach ($path as $prefix=>$path){
