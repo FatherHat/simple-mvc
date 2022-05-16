@@ -29,12 +29,13 @@ class loadClass
     }
 
     public function findFile($class,$ext = '.php'){
-        //var_dump($class);
+        var_dump($class.'<br>');
         //最顶层的命名空间
         $prefix = substr($class,0,strpos($class,'\\')+1);
         if(array_key_exists($prefix,$this->prefixDirsPsr4)){
             //自动加载目录的标准路径
             $filePath = strtr(APP_PATH.$class, '\\', '/').$ext;
+            //var_dump($class);
             return $filePath;
         }
         return false;
