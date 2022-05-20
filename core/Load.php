@@ -29,7 +29,7 @@ class Load{
 
     public function run(){
         //加载路由类型
-        (new RouterBase())->location();
+        (new RouterClass())->run();
     }
 
     /**
