@@ -4,13 +4,13 @@ namespace core;
 class RouterClass
 {
     //请求地址
-    private $url;
+    public $url;
     //控制器
-    private $controller;
+    public $controller;
     //请求控制器名称
-    private $controllerName;
+    public $controllerName;
     //请求控制器方法
-    private $controllerAction;
+    public $controllerAction;
 
 
     public function run(){
