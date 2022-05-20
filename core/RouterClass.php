@@ -14,6 +14,7 @@ class RouterClass
 
 
     public function run(){
+
         $this->settUrl();
         $this->setController();
         $this->exists();
@@ -47,10 +48,15 @@ class RouterClass
             $this->controllerName = ucfirst($url[0]);
             $this->controllerAction = $url[1];
         }else{
-            //默认地址
-            $this->controllerName = 'Index';
-            $this->controllerAction = 'index';
+            //设置默认地址
+            $this->setDefController();
         }
+    }
+
+    private function setDefController(){
+        //默认地址
+        $this->controllerName = 'Index';
+        $this->controllerAction = 'index';
     }
 
     /**
