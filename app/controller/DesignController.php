@@ -23,7 +23,8 @@ class DesignController{
     }
 
     /**
-     * 工厂模式
+     * 简单工厂模式
+     * 核心是把创建实例和使用实例分开，实现低耦合，高内聚
      */
     public function factoryTest(){
         //build()返回的是否是Cart的实例
